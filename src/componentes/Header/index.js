@@ -1,15 +1,20 @@
 import Logo from "../Logo";
 import OpcoesHeader from "../OpcoesHeader";
 import IconesHeader from "../IconesHeader";
+import styled from "styled-components";
 
-import "./estilo.css"
+const HeaderContainer = styled.header`
+  background-color: #fff;
+  justify-content: center;
+  display: flex;
+`;
 
 export default function Header() {
   return (
-    <header className="App-header">
+    <HeaderContainer>
       <Logo />
       <OpcoesHeader />
       <IconesHeader />
-    </header>
+    </HeaderContainer>
   );
 }
